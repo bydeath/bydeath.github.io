@@ -1,0 +1,62 @@
+---
+layout: post
+title: "python的表格处理模块tablib"
+date: "2016-05-05 22:03:42 +0800"
+---
+
+# 简单介绍
+分享一个python的包[tablib](https://github.com/kennethreitz/tablib)，用来处理表格类型的数据。这个包可以用来方便的处理表格类型的数据集。支持下面几种格式：
+
+* Excel (Sets + Books)
+* JSON (Sets + Books)
+* YAML (Sets + Books)
+* HTML (Sets)
+* TSV (Sets)
+* OSD (Sets)
+* CSV (Sets)
+* DBF (Sets)
+
+# 例子
+
+## 新建一个数据集，并添加两行数据
+
+<pre>
+>>> data = tablib.Dataset(headers=['First Name', 'Last Name', 'Age'])
+>>> map(data.append, [('Kenneth', 'Reitz', 22), ('Bessie', 'Monke', 21)])
+</pre>
+
+## json格式
+<pre>
+>>> print data.json
+[{"Last Name": "Reitz", "First Name": "Kenneth", "Age": 22}, {"Last Name": "Monke", "First Name": "Bessie", "Age": 21}]
+</pre>
+
+## yaml格式
+<pre>
+>>> print data.yaml
+- {Age: 22, First Name: Kenneth, Last Name: Reitz}
+- {Age: 21, First Name: Bessie, Last Name: Monke}
+</pre>
+
+## csv格式
+<pre>
+>>> print data.csv
+First Name,Last Name,Age
+Kenneth,Reitz,22
+Bessie,Monke,21
+</pre>
+
+## tsv格式
+<pre>
+>>> print data.tsv
+First Name	Last Name	Age
+Kenneth	Reitz	22
+Bessie	Monke	21
+</pre>
+
+## xls格式
+`data.xls`就可以转成xls格式，然后保存为xls格式就生成一个xls文件了。
+<pre>
+>>> with open('people.xls', 'wb') as f:
+...     f.write(data.xls)
+</pre>
