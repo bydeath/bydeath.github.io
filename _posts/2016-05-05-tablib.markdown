@@ -5,7 +5,7 @@ date: "2016-05-05 22:03:42 +0800"
 ---
 
 # 简单介绍
-分享一个python的包[tablib](https://github.com/kennethreitz/tablib)，用来处理表格类型的数据。这个包可以用来方便的处理表格类型的数据集。支持下面几种格式：
+分享一个python的包***[tablib](https://github.com/kennethreitz/tablib)***，用来处理表格类型的数据。这个包可以用来方便的处理表格类型的数据集。支持下面几种格式：
 
 * Excel (Sets + Books)
 * JSON (Sets + Books)
@@ -17,6 +17,7 @@ date: "2016-05-05 22:03:42 +0800"
 * DBF (Sets)
 
 # 例子
+tablib模块可以很方便的通过来将数据转换成支持的csv、json、yaml、xlsx等表格形式，使用方式也很简单，通过访问属性就可以将数据集转换成相应的格式。使用方式就是这样:`data.csv`, `data.json`, `data.yaml`, `data.xlsx`。
 
 ## 新建一个数据集，并添加两行数据
 
@@ -55,7 +56,7 @@ Bessie	Monke	21
 </pre>
 
 ## xls格式
-`data.xls`就可以转成xls格式，然后保存为xls格式就生成一个xls文件了。
+调用`data.xls`就可以转成xls格式，然后保存为xls格式就生成一个xls文件了。
 <pre>
 >>> with open('people.xls', 'wb') as f:
 ...     f.write(data.xls)
