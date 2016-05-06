@@ -2,7 +2,7 @@
 layout: post
 title: "查看本地端口"
 date: "2016-05-05 23:40:37 +0800"
-tags: [端口, 命令, linux]
+tags: 端口 命令 linux
 ---
 
 在开发中经常需要查看本地相应的端口是否运行相应的服务，netstat和netcat可以用来做这样的工作

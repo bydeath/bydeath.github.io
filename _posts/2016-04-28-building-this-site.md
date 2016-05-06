@@ -2,7 +2,7 @@
 layout: post
 title:  "创建这个站点"
 date:   2016-04-28 01:03:49 +0800
-categories: jekyll update
+tags: jekyll 建站
 ---
 
 本站点托管在Github上，使用了Github Pages、Jeklly。可以使用markdown写博客。创建本站点主要参考了Jonathan McGlone写的这篇博文[Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)。

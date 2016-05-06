@@ -2,7 +2,7 @@
 layout: post
 title: "vim-jekyll插件"
 date: "2016-04-29 02:16:55 +0800"
-categories: vim
+tags: vim jekyll vim插件
 ---
 
 这是一个对 vim-jekyll插件的测试，可以用vim命令来方便的写博客。

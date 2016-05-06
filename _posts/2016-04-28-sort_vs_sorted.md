@@ -2,7 +2,7 @@
 layout: post
 title:  "python中的sort和sorted"
 date:   2016-04-07 23:11:09 +0800
-categories: python
+tags: python sort sorted
 ---
 sorted 和sort是python内置的函数,但是sort是列表的函数，而sorted直接对容器进行操作，返回一个新的容器，容器可以是list，tuple，可迭代对象等。
 a.sort()排序后会改变a。而sorted(a)会返回一个排序后的容器，a并不变化。

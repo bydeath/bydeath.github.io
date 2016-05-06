@@ -2,6 +2,7 @@
 layout: post
 title: "python的表格处理模块tablib"
 date: "2016-05-05 22:03:42 +0800"
+tags: python 表格 csv 文本处理
 ---
 
 # 简单介绍
