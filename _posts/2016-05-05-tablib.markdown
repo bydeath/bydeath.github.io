@@ -6,7 +6,7 @@ tags: python 表格 csv 文本处理
 ---
 
 # 简单介绍
-分享一个python的包***[tablib](https://github.com/kennethreitz/tablib)***，用来处理表格类型的数据。这个包可以用来方便的处理表格类型的数据集。支持下面几种格式：
+分享一个python的包[tablib](https://github.com/kennethreitz/tablib)，用来处理表格类型的数据。这个包可以用来方便的处理表格类型的数据集。支持下面几种格式：
 
 * Excel (Sets + Books)
 * JSON (Sets + Books)
