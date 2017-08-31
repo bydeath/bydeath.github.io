@@ -1,0 +1,19 @@
+---
+layout: post
+title: "unzip批量解压"
+date: "2017-08-31 03:06:33 +0800"
+---
+
+有多种方法：
+
+1. ```sudo unzip \*.zip```
+2. ```sudo unzip "*.zip"```
+3. ```ls *.zip |sudo xargs -n1 unzip```
+4. ```for z in *.zip; do unzip $z; done```
+
+```unzip *.zip```命令之所以会报错。是因为该命令相当于```unzip a.zip b.zip c.zip```, 其中a.zip, b.zip, c.zip是当前目录中的zip文件。两个命令的报错都是一样的，是指进入a.zip，对a中的b.zip c.zip进行解压。而实际上b.zip和c.zip和a.zip在同一个目录下，所以会报错找不到。之所以```ls *.zip```能运行成功，而```unzip *.zip```报错的原因与两个命令的参数格式有关。ls命令后面可以跟多个文件名，而unzip不行，unzip的第2个参数表示在第一个参数指定的zip归档中找。
+![](/assets/unzip_man.png)
+
+[How do I unzip multiple / many files under Linux?][1]
+[1]:https://www.cyberciti.biz/faq/linux-unix-shell-unzipping-many-zip-files/
+
